@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="pe.cibertec.capitulo3.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgIcono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/imgIcono"
+        android:layout_toStartOf="@id/txtFecha"
+        android:text="Noche de lluvia"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/txtFecha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgIcono"
+        app:layout_constraintTop_toTopOf="@+id/imgIcono" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="26 DIC 2017"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/txtDetalle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txtTitulo"
+        android:layout_below="@id/txtTitulo"
+        android:text="Es una noche de lluvia. Es un buen momento para quedarse en casa :)"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtFecha"
+        app:layout_constraintStart_toStartOf="@+id/txtTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnMeGusta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Me gusta"
+        app:layout_constraintEnd_toStartOf="@+id/btnComentar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imgIcono"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetalle" />
+
+    <Button
+        android:id="@+id/btnComentar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Comentar"
+        app:layout_constraintEnd_toEndOf="@+id/txtDetalle"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMeGusta"
+        app:layout_constraintTop_toTopOf="@+id/btnMeGusta" />
+
+</android.support.constraint.ConstraintLayout>

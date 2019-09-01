@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Capitulo7</string>
+
+    <string-array name="opciones">
+        <item>Tabs</item>
+        <item>Bottom Navigation</item>
+        <item>Navigation Drawer</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

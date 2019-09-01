@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context="pe.cibertec.capitulo3.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgIcono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_="@id/txtFecha"
+        android:layout_marginStart="16sp"
+        android:layout_toEndOf="@id/imgIcono"
+        android:layout_toStartOf="@id/txtFecha"
+        android:text="Noche de lluvia"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="26 DIC 2017"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/txtTitulo"
+        android:layout_below="@id/txtTitulo"
+        android:text="Es una noche de lluvia. Es un buen momento para quedarse en casa :)"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/txtDetalle">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Me gusta" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Comentar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

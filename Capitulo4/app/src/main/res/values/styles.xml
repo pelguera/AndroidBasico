@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Tema base de la aplicación. -->
+    <style name="AppTheme" parent="Theme"/>
+
+    <!-- Tema Light -->
+    <style name="Theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="editTextStyle">@style/Widget.Theme.EditText</item>
+    </style>
+
+    <!-- Tema Dark -->
+    <style name="Theme.Dark">
+        <item name="android:windowBackground">@color/darkBackground</item>
+        <item name="android:textColorPrimary">@color/darkTextPrimary</item>
+        <item name="android:textColorSecondary">@color/darkTextSecondary</item>
+        <item name="android:textColorTertiary">@color/darkTextTertiary</item>
+    </style>
+
+    <style name="Widget.Theme.TextView" parent="android:Widget.TextView"/>
+
+    <style name="Widget.Theme.TextView.Titulo">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="Widget.Theme.TextView.Link">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?colorAccent</item>
+    </style>
+
+    <style name="Widget.Theme.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorTertiary</item>
+    </style>
+
+</resources>
